@@ -1,0 +1,12 @@
+[0.010s] Invoking command in '/home/furkan/tutorial/ros2/build/cpp_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/furkan/tutorial/ros2/build/cpp_node -- -j12 -l12
+[0.039s] [35m[1mConsolidate compiler generated dependencies of target my_oop_node[0m
+[0.048s] [ 50%] Built target my_node
+[0.053s] [ 75%] [32mBuilding CXX object CMakeFiles/my_oop_node.dir/src/my_oop_node.cpp.o[0m
+[1.783s] [01m[K/home/furkan/tutorial/ros2/src/cpp_node/src/my_oop_node.cpp:[m[K In constructor ‘[01m[KMyNode::MyNode()[m[K’:
+[1.783s] [01m[K/home/furkan/tutorial/ros2/src/cpp_node/src/my_oop_node.cpp:10:22:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[1.783s]    10 |     rclcpp::spin(Node[01;31m[K)[m[K;
+[1.783s]       |                      [01;31m[K^[m[K
+[2.128s] gmake[2]: *** [CMakeFiles/my_oop_node.dir/build.make:76: CMakeFiles/my_oop_node.dir/src/my_oop_node.cpp.o] Error 1
+[2.128s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/my_oop_node.dir/all] Error 2
+[2.129s] gmake: *** [Makefile:146: all] Error 2
+[2.131s] Invoked command in '/home/furkan/tutorial/ros2/build/cpp_node' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/furkan/tutorial/ros2/build/cpp_node -- -j12 -l12

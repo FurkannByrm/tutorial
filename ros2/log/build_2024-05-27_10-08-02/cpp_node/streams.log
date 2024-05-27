@@ -1,0 +1,28 @@
+[0.008s] Invoking command in '/home/furkan/tutorial/ros2/build/cpp_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/furkan/tutorial/ros2/build/cpp_node -- -j12 -l12
+[0.038s] [35m[1mConsolidate compiler generated dependencies of target my_node[0m
+[0.038s] [35m[1mConsolidate compiler generated dependencies of target my_oop_node[0m
+[0.051s] [ 50%] [32mBuilding CXX object CMakeFiles/my_oop_node.dir/src/my_oop_node.cpp.o[0m
+[0.051s] [ 50%] [32mBuilding CXX object CMakeFiles/my_node.dir/src/my_node.cpp.o[0m
+[1.927s] [01m[K/home/furkan/tutorial/ros2/src/cpp_node/src/my_oop_node.cpp:[m[K In constructor ‘[01m[KMyNode::MyNode()[m[K’:
+[1.927s] [01m[K/home/furkan/tutorial/ros2/src/cpp_node/src/my_oop_node.cpp:10:22:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+[1.927s]    10 |     rclcpp::spin(Node[01;31m[K)[m[K;
+[1.927s]       |                      [01;31m[K^[m[K
+[1.939s] [01m[K/home/furkan/tutorial/ros2/src/cpp_node/src/my_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[1.939s] [01m[K/home/furkan/tutorial/ros2/src/cpp_node/src/my_node.cpp:14:18:[m[K [01;31m[Kerror: [m[K‘[01m[KNode[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::Node[m[K’?
+[1.939s]    14 |     rclcpp::spin([01;31m[KNode[m[K);
+[1.939s]       |                  [01;31m[K^~~~[m[K
+[1.939s]       |                  [32m[Krclcpp::Node[m[K
+[1.939s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[1.939s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[1.940s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[1.940s]                  from [01m[K/home/furkan/tutorial/ros2/src/cpp_node/src/my_node.cpp:1[m[K:
+[1.940s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:77:7:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::Node[m[K’ declared here
+[1.940s]    77 | class [01;36m[KNode[m[K : public std::enable_shared_from_this<Node>
+[1.940s]       |       [01;36m[K^~~~[m[K
+[2.283s] gmake[2]: *** [CMakeFiles/my_oop_node.dir/build.make:76: CMakeFiles/my_oop_node.dir/src/my_oop_node.cpp.o] Error 1
+[2.283s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/my_oop_node.dir/all] Error 2
+[2.284s] gmake[1]: *** Waiting for unfinished jobs....
+[2.299s] gmake[2]: *** [CMakeFiles/my_node.dir/build.make:76: CMakeFiles/my_node.dir/src/my_node.cpp.o] Error 1
+[2.299s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/my_node.dir/all] Error 2
+[2.300s] gmake: *** [Makefile:146: all] Error 2
+[2.302s] Invoked command in '/home/furkan/tutorial/ros2/build/cpp_node' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/furkan/tutorial/ros2/build/cpp_node -- -j12 -l12

@@ -1,0 +1,4 @@
+Invoking command in '/home/furkan/tutorial/ros2/build/cpp_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/furkan/tutorial/ros2/src/cpp_node -DCMAKE_INSTALL_PREFIX=/home/furkan/tutorial/ros2/install/cpp_node
+Invoked command in '/home/furkan/tutorial/ros2/build/cpp_node' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/furkan/tutorial/ros2/src/cpp_node -DCMAKE_INSTALL_PREFIX=/home/furkan/tutorial/ros2/install/cpp_node
+Invoking command in '/home/furkan/tutorial/ros2/build/cpp_node': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/furkan/tutorial/ros2/build/cpp_node -- -j12 -l12
+Invoked command in '/home/furkan/tutorial/ros2/build/cpp_node' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/furkan/tutorial/ros2/build/cpp_node -- -j12 -l12
