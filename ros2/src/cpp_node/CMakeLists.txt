@@ -1,3 +1,12 @@
+/clicked_point
+/goal_pose
+/initialpose
+/joint_states
+/parameter_events
+/robot_description
+/rosout
+/tf
+/tf_static
 cmake_minimum_required(VERSION 3.8)
 project(cpp_node)
 
