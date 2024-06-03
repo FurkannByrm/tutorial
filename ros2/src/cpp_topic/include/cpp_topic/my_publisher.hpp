@@ -6,6 +6,7 @@
 
 class PubNode: public rclcpp::Node{
 
+    public:
     PubNode();
     ~PubNode();
     

@@ -7,10 +7,32 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(rclcpp REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
+
+
+  include_directories(${PROJECT_SOURCE_DIR}/include)
+
+  add_executable(publisher_node src/publisher.cpp)
+  add_executable(subscriber_node src/subscriber.cpp)
+
+  ament_target_dependencies(publisher_node
+  rclcpp
+  std_msgs
+  )
+  ament_target_dependencies(subscriber_node
+  rclcpp
+  std_msgs
+  )
+
+  install(TARGETS
+  publisher_node
+  subscriber_node
+  DESTINATION lib/${PROJECT_NAME}
+)
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
   set(ament_cmake_copyright_FOUND TRUE)

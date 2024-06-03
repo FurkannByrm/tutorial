@@ -14,11 +14,6 @@ int main(int argc, char** args)
     rclcpp::spin(node);
     rclcpp::shutdown();
 
-    int y = 10;
-    int &&x = +y;
-    
-    
-
 
 
 }
