@@ -1,6 +1,7 @@
 #include "cpp_service/oop_client.hpp"
 
 
+
 Client::Client(): Node("oop_client_node"){
   client_ = this->create_client<example_interfaces::srv::AddTwoInts>("server_test");
   threads.push_back(std::thread(std::bind(&Client::clientCallback, this, 10, 23)));
@@ -35,6 +36,9 @@ void Client::clientCallback(int a, int b){
         RCLCPP_ERROR(this->get_logger(), "Failed the call service add_two_ints");
     }
 }
+
+
+
     int main(int argc, char ** args){
 
         rclcpp::init(argc, args);
