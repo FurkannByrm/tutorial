@@ -5,8 +5,10 @@ SubNode::SubNode(): Node("subscriber_node"){
 
     using namespace std::placeholders;
     RCLCPP_DEBUG(this->get_logger(),"subscription has been started");
-    sub_int    = this->create_subscription<std_msgs::msg::Int16>("cpp_topic_int", 10, std::bind(&SubNode::subCallbackInt, this,_1));
-    sub_string = this->create_subscription<std_msgs::msg::String>("cpp_topic_string",10, std::bind(&SubNode::subCallbackString, this, _1));
+    sub_int    = this->create_subscription<std_msgs::msg::Int16>
+    ("cpp_topic_int", 10, std::bind(&SubNode::subCallbackInt, this,_1));
+    sub_string = this->create_subscription<std_msgs::msg::String>
+    ("cpp_topic_string",10, std::bind(&SubNode::subCallbackString, this, _1));
 
 }
 SubNode::~SubNode(){

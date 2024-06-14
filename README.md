@@ -1,10 +1,9 @@
 Tutorial
 Table of Contents
 
-    C
+    
     C++
     CMake
-    Python
     Linux (Bash)
     Matlab
     ROS2
@@ -12,5 +11,4 @@ Table of Contents
     QT
     IPC (Inter Process Commonication)
     Serial
-    MAVLink
-    gstreamer
+    OpenGl
