@@ -12,7 +12,8 @@
         "/home/furkan/tutorial/ros2/src/cpp_service/include/**",
         "/home/furkan/tutorial/ros2/src/cpp_topic/include/**",
         "/home/furkan/tutorial/ros2/src/cpp_variable/include/**",
-        "/home/furkan/tutorial/ros2/install/variable/include/**"
+        "/home/furkan/tutorial/ros2/install/variable/include/**",
+        "/home/furkan/tutorial/ros2/src/cpp_parameters/include/**"
       ],
       "name": "ROS",
       "intelliSenseMode": "gcc-x64",

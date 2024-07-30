@@ -10,6 +10,7 @@
         "/home/furkan/tutorial/ros2/src/cpp_node/include/**",
         "/home/furkan/tutorial/ros2/src/cpp_service/include/**",
         "/home/furkan/tutorial/ros2/src/cpp_topic/include/**",
+        "/home/furkan/tutorial/ros2/src/cpp_parameters/include/**",
         "/usr/include/**"
       ],
       "name": "ROS",
