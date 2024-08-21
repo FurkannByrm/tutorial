@@ -30,9 +30,9 @@ class SimpleLifecycleNode : public rclcpp_lifecycle::LifecycleNode
 
     private:
     rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_;
-}
+};
 
 
 
 
-#endif //SIMPLE_LIFE_CYCLE_NODE_    
+#endif //SIMPLE_LIFE_CYCLE_NODE_ 

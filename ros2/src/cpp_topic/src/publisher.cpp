@@ -16,12 +16,15 @@ void PubNode::pubCallbackInt(){
     RCLCPP_INFO(this->get_logger(),"count: %d", count_);
     std_msgs::msg::Int16 msg;
     msg.data = count_;
-    pubCallbackString();
+    // pubCallbackString();
     pub_int->publish(msg);   
 }
 void PubNode::pubCallbackString(){
     std_msgs::msg::String msg;
-    msg.data = std::to_string(count_) + std::string(") hiiii");
+    std::string hello = "hi";
+    msg.data = hello;
+    RCLCPP_INFO(this->get_logger(),"PUBLISHING NODE.. %s", msg.data.c_str());
+    // msg.data = std::to_string(count_) + std::string(") hiiii");
     pub_string->publish(msg);
 }
 

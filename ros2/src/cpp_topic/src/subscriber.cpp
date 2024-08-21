@@ -15,10 +15,10 @@ SubNode::~SubNode(){
     RCLCPP_DEBUG(this->get_logger(),"Subscriber terminated");
 }
 void SubNode::subCallbackInt(const std_msgs::msg::Int16 msg){
-    RCLCPP_INFO(this->get_logger(),"int: %d", msg.data);
+    RCLCPP_INFO(this->get_logger(),"I'm listening cpp_topic_int node");
 }
 void SubNode::subCallbackString(const std_msgs::msg::String msg){
-    RCLCPP_INFO(this->get_logger(),"string: %s",msg.data.c_str());
+    RCLCPP_INFO(this->get_logger(),"I'm listening cpp_topic_string node");
 }
 int main(int argc, char ** args){
 

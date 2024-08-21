@@ -6,14 +6,14 @@
 
 
 class Client: public rclcpp::Node{
-
-    private:
-    rclcpp::Client<example_interfaces::srv::AddTwoInts>::SharedPtr client_;
-    std::vector<std::thread> threads;
     public:
     Client();
     ~Client();
     void clientCallback(int a, int b);
+
+    private:
+    rclcpp::Client<example_interfaces::srv::AddTwoInts>::SharedPtr client_;
+    std::vector<std::thread> threads;
 };
 
 #endif
