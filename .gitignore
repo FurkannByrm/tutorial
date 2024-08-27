@@ -3,3 +3,4 @@ ros2/build/
 ros2/install
 ros2/log
 ros2/build/cpp_node/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/cpp_node
+raspberry_pico_examples/blink
